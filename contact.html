@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Peter's Modern Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .page-header {
+            background-color: var(--light-bg);
+            padding: 40px 5%;
+            text-align: center;
+        }
+        
+        .contact-content {
+            display: flex;
+            max-width: var(--max-width);
+            margin: 4rem auto;
+            padding: 0 5%;
+            gap: 40px;
+        }
+        
+        .contact-form-container, .contact-info {
+            flex: 1;
+        }
+
+        .contact-form-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form-container input, .contact-form-container textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .contact-form-container textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-info h2 {
+            color: var(--secondary-color);
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 900px) {
+            .contact-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">P</span> Peter's Modern Wear
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you! Visit us or drop us a line.</p>
+    </section>
+
+    <section class="contact-content">
+        
+        <div class="contact-form-container">
+            <h2>Send a Message</h2>
+            <form action="https://formspree.io/f/f/peter's@gmail.com" method="POST"> 
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn large-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Details</h2>
+            <div class="info-item">
+                <h3><i class="fas fa-map-marker-alt"></i> Store Location</h3>
+                <p>Ground Floor, Modern Plaza, Nairobi CBD, Kenya</p>
+            </div>
+            <div class="info-item">
+                <h3><i class="fas fa-phone-alt"></i> Phone</h3>
+                <p>+254 7XX XXX XXX (Call or WhatsApp)</p>
+            </div>
+            <div class="info-item">
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p><a href="mailto:peter's@gmail.com">peter's@gmail.com</a></p>
+            </div>
+            <div class="info-item">
+                <h3><i class="fas fa-clock"></i> Store Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Peter's Modern Wear. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>Email for inquiries: <a href="mailto:peter's@gmail.com">peter's@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

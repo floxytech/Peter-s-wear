@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - Peter's Modern Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .product-page {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-details h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .options-group {
+            margin-bottom: 30px;
+        }
+
+        .options-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .selector {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 150px;
+            cursor: pointer;
+        }
+        
+        .payment-note {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+                margin: 2rem auto;
+            }
+            .product-details h1 {
+                font-size: 2rem;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">P</span> Peter's Modern Wear
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-page">
+        
+        <div class="product-images">
+             <img src="https://i.imgur.com/your-mens-outfit-image-id.jpg" alt="The Urban Shirt Set" class="main-image">
+        </div>
+
+        <div class="product-details">
+            <h1>The Urban Shirt Set</h1>
+            <p class="product-price">Ksh 4,500</p>
+            
+            <div class="options-group">
+                <label for="size-select">Size:</label>
+                <select id="size-select" class="selector">
+                    <option value="s">Small</option>
+                    <option value="m" selected>Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">Extra Large</option>
+                </select>
+            </div>
+
+            <div class="options-group">
+                <label for="color-select">Color:</label>
+                <select id="color-select" class="selector">
+                    <option value="navy">Navy Blue</option>
+                    <option value="grey" selected>Charcoal Grey</option>
+                    <option value="white">Off-White</option>
+                </select>
+            </div>
+
+            <h2 style="font-size: 1.5rem; margin-top: 30px;">Order/Payment Option</h2>
+            
+            <a href="https://secure.paylink.com/checkout/urban-set-4500" class="btn primary-btn large-btn" target="_blank">
+                <i class="fas fa-shopping-cart"></i> Buy Now - Secure Checkout
+            </a>
+            
+            <p class="payment-note">
+                Payments processed securely via our partners. Options include M-Pesa, Visa/Mastercard, or Cash on Delivery (Nairobi only).
+            </p>
+
+            <h2 style="font-size: 1.5rem; margin-top: 40px;">Product Description</h2>
+            <p class="product-description">
+                The perfect blend of contemporary style and comfort. This shirt set is tailored from premium Kenyan cotton, offering a breathable yet structured fit. Ideal for office wear or a weekend outing. Features subtle geometric stitching inspired by Maasai patterns.
+            </p>
+            
+            <ul style="list-style: none; padding: 0;">
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> **Material:** 100% Premium Kenyan Cotton</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> **Fit:** Slim/Modern Fit</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> **Care:** Machine Wash Cold</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> **Shipping:** Free Nairobi delivery (1-2 days)</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Peter's Modern Wear. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>Email for inquiries: <a href="mailto:peter's@gmail.com">peter's@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
